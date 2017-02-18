@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import style from './styles/main.sass';
 
 import store from './createStore';
 import Router from './navigation/index';
