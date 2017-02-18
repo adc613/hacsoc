@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import style from './styles/main.sass';
+var style = require('./styles/main.sass');
+console.log(style);
 
 import store from './createStore';
 import Router from './navigation/index';
