@@ -1,6 +1,8 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 
+import TodoList from '../components/smart/TodoList';
+
 class HomePage extends React.Component {
   constructor(props) {
     super(props);
@@ -10,7 +12,9 @@ class HomePage extends React.Component {
   render() {
 
     return (
-      <h1>Home Page</h1>
+      <div>
+        <TodoList />
+      </div>
     );
 
   }

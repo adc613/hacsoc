@@ -1,8 +1,8 @@
+require('./styles/main.sass'); // loads sass code into a style tag on the final html pag
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-var style = require('./styles/main.sass');
-console.log(style);
 
 import store from './createStore';
 import Router from './navigation/index';
