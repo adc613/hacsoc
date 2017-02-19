@@ -9,16 +9,19 @@ class Todo extends React.Component {
 
   render() {
 
+    console.log(this.props);
+    let done = this.props.doneClickHandler;
+
     return (
       <li>
         <div className="todo">
           <h3 className="date"> {this.props.date} </h3>
           <p className="description"> {this.props.description} </p>
           <div className="buttons">
-            <button className="done" onClick={this.props.doneClickHandler}>
+            <button id={this.props.id} className="done" onClick={this.props.doneClickHandler}>
               Mark as Done
             </button>
-            <button className="archive" onClick={this.props.archiveClickHandler}>
+            <button id={this.props.id} className="archive" onClick={this.props.archiveClickHandler}>
               Archive
             </button>
           </div>

@@ -10,12 +10,22 @@ class TodoList extends React.Component {
   constructor(props) {
     super(props);
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
+    this.doneClickHandler = this.doneClickHandler.bind(this);
+    this.archiveClickHandler = this.archiveClickHandler.bind(this);
   }
 
   doneClickHandler(event) {
+
+    let id = event.target.id.split('-')[1];
+    this.props.actions.markAsDone(id);
+
   }
 
   archiveClickHandler(event) {
+
+    let id = event.target.id.split('-')[1];
+    this.props.actions.archive(id);
+
   }
 
   render() {
@@ -24,9 +34,11 @@ class TodoList extends React.Component {
       <ul id="todo-list">
         {
           this.props.todos.map((todo) => {
+            let id = 'id-' + todo.get('id');
             return (
               <Todo 
                 key={todo.get('id')}
+                id={id}
                 description={todo.get('description')}
                 date={todo.get('date')}
                 doneClickHandler={this.doneClickHandler}

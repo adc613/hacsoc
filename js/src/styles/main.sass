@@ -1,2 +1,92 @@
-h1
-  color: blue
+$background-color: #D6DADC
+$case-blue: #00304E
+$arcive-red: #7E000F
+
+html,
+body,
+#app,
+#home-page
+  height: 100%
+  background-color: $background-color
+  padding: 0
+  margin: 0
+
+#banner
+  width: 100%
+  background-color: $case-blue
+  margin: 0;
+  padding: 12px;
+
+  h1
+    margin: 0
+    color: white
+    text-align: center
+    font-size: 60px
+
+#content
+  padding-top: 5%
+  padding-left: 10%
+  padding-right: 10%
+  height: 80%
+
+  display: flex
+
+  .left
+    padding: 10px
+    width: 50%
+
+  .right
+    padding: 10px
+    padding-left: 40px
+    width: 50%
+    height: 100%
+
+#call-to-action
+  font-size: 150%
+  padding: 20px
+
+#todo-form
+  margin-top: 100px
+  background-color: white
+  border: solid 1px $case-blue
+  border-radius: 12px
+  padding: 20px
+
+  #description-container
+    width: 100%
+    textarea
+      width: 100%
+      height: 65px
+
+  #due-date
+    margin-top: 20px
+    margin-bottom: 20px
+
+  button
+    width: 100%
+    background-color: $case-blue
+    border-radius: 8px
+    color: white
+    padding: 10px
+    font-size: 120%
+    border: none
+
+#todo-list
+  list-style-type: none
+  background-color: white
+  border: solid 1px $case-blue
+  padding: 10px
+  overflow: scroll
+  height: 90%
+
+  .todo
+    border: solid 1px $case-blue
+    margin: 5px
+    margin-bottom: 15px
+    margin-top: 15px
+
+    .date
+      text-align: right
+      padding: 10px
+      margin-top: 0px
+      margin-bottom: 0px
