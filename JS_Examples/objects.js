@@ -8,4 +8,6 @@ let obj = {
 
 console.log(obj);
 console.log(obj.hello);
+console.log(obj["world"]);
 console.log(obj.func());
+
