@@ -125,7 +125,7 @@ function getTodo(todos, id) {
     let todo = todos.get(i);
     console.log(todo.get('id'));
     console.log(id);
-    if(todo.get('id') === id) {
+    if(String(todo.get('id')) === String(id)) {
       return [todo, i];
     }
   }

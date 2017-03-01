@@ -9,7 +9,8 @@ export function inputChangeAction(input, value) {
   return {
     type: INPUT_CHANGE,
     payload:{
-      input, value
+      input,
+      value
     }
   };
 
