@@ -32,14 +32,14 @@ into the React/ui/ directory.
 2. In order to run you'll need to download all the necessary modules. Assuming
 you have node.js installed the command is:
 
-```
-npm install
-```
+  ```
+  npm install
+  ```
 
 3. You can then run a development server locally with the command
-```
-npm start
-```
+  ```
+  npm start
+  ```
 
 4. Open up your browser and go to localhost:8080 and everything should be
 running.
