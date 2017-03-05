@@ -57,12 +57,15 @@ and go to localhost:8080
 
 # Contact
 
-## Custom Orthopaedic Solutions is hiring!!!!
+__Custom Orthopaedic Solutions is hiring:__
+
 If any of this stuff interests you and you're looking for a internship/jobs
 Custom Orthopaedic Solutions (COS) is hiring, that's where I interned
 there last summer and learned everything I covered in my talk and more there.
 Just email Rakesh Guha at rguha@customorthopaedics.com He's a super nice guy
 and a relatively recent Case grad.
+
+__me:__
 
 If you have any questions about my talk, my experience at COS, or anything else.
 don't hesitate to reach out, the best email to reach me is me@adamcollins.io.
