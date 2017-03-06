@@ -1,3 +1,8 @@
+/**
+ * OBJECTS
+ *
+ * Objects in JavaScript are key value pairs
+ */
 let obj = {
   hello: "hello",
   world: 42,

@@ -2,7 +2,6 @@ import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-
 import * as actionCreators from '../../actions/todoList';
 import Todo from '../dumb/Todo';
 
@@ -36,7 +35,7 @@ class TodoList extends React.Component {
           this.props.todos.map((todo) => {
             let id = 'id-' + todo.get('id');
             return (
-              <Todo 
+              <Todo
                 key={todo.get('id')}
                 id={id}
                 description={todo.get('description')}

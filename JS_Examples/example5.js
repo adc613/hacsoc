@@ -1,6 +1,15 @@
 /**
- * This "classes" used to be declared. The syntax is stranged hence the addition
- * of class syntax is ES6/ES2015.
+ * CLASSES
+ *
+ * in ES2015 classes were added to JavaScript
+ */
+
+
+/**
+ * This how "classes" used to be declared. The syntax is stranged hence the
+ * addition of class syntax is ES6/ES2015.
+ *
+ * Don't look too much into this
  */
 function AnimalOld(name) {
 
@@ -27,6 +36,9 @@ class Animal {
 
 }
 
+/**
+ * Classes can be extended
+ */
 class Dog extends Animal {
 
   // override speak
@@ -36,6 +48,9 @@ class Dog extends Animal {
 
 }
 
+/**
+ * instances can be instantiated with "new"
+ */
 let fred = new Animal('fred');
 fred.speak();
 

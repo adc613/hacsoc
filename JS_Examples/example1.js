@@ -1,10 +1,13 @@
 /**
+ * SYNTAX BASICS
+ *
  * JavaScript is a scripting language so there's no need for a main funciton
  * like there is in Java. It'll just run through this script in order and run
  * each line of code as it appears
  */
-let variable; // declaring a variable
+
 var anotherVariable; // declaring a variable, var and let behave differently. Let is less weird so it's best practice to use let if possible
+let variable; // declaring a variable
 
 let number = 1;
 
@@ -28,8 +31,8 @@ let y = 3;
 let z = x / y;
 
 console.log(typeof x);
-console.log("x: " + x); // string concation with a +
-console.log("y: " + y);
+console.log("x = " + x); // string concation with a +
+console.log("y = " + y);
 console.log("x / y = " + z);
 
 
@@ -58,11 +61,11 @@ console.log("===== while loop =====");
  * ==, !=, >, <, <=, >=
  */
 if(1 == 1) {
-  console.log("1 equals 2");
+  console.log("1 equals 1");
 }
 
 if(1 != 2) {
-  console.log("1 does not equal 2");
+  console.log("1 does not equal 1");
 }
 
 
@@ -77,7 +80,7 @@ if(1 == '1') {
  * It's typically considered best practice to use === or !== opposed to == or !=
  */
 if(1 === '1') {
-  console.log("I'm going insane");
+  console.log("This will never print");
 } else {
   console.log("Sanity check"); // will return sanity check
 }
