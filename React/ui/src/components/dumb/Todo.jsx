@@ -9,7 +9,6 @@ class Todo extends React.Component {
 
   render() {
 
-    console.log(this.props);
     let done = this.props.doneClickHandler;
 
     return (

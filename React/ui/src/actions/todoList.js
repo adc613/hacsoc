@@ -56,15 +56,9 @@ export function addTodo() {
     let id = state.todoList.get('todos').size;
     id += state.todoList.get('archive').size;
     id += state.todoList.get('done').size;
-    id += 1;
-    console.log(dueDate);
 
     dispatch(addTodoAction(description, dueDate, id));
-
     dispatch(inputChangeAction('description', ''));
-    dispatch(inputChangeAction('day', ''));
-    dispatch(inputChangeAction('month', ''));
-    dispatch(inputChangeAction('year', ''));
 
   };
 

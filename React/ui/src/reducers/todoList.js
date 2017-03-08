@@ -10,38 +10,23 @@ import {
 const initialState = fromJS({
   todos: [
     {
+      id: '0',
+      description: "Give a HacSoc Talk",
+      date: '06/13/2017'
+    },
+    {
       id: '1',
-      description: "hello",
+      description: "Complete Sages portfolio",
       date: '06/13/2017'
     },
     {
       id: '2',
-      description: "hello",
+      description: "Make a creative Todo",
       date: '06/13/2017'
     },
     {
       id: '3',
-      description: "hello",
-      date: '06/13/2017'
-    },
-    {
-      id: '4',
-      description: "hello",
-      date: '06/13/2017'
-    },
-    {
-      id: '5',
-      description: "hello",
-      date: '06/13/2017'
-    },
-    {
-      id: '6',
-      description: "hello",
-      date: '06/13/2017'
-    },
-    {
-      id: '7',
-      description: "hello",
+      description: "Make another creative Todo",
       date: '06/13/2017'
     },
   ],
@@ -123,8 +108,6 @@ function getTodo(todos, id) {
 
   for(let i = 0; i < todos.size; i++) {
     let todo = todos.get(i);
-    console.log(todo.get('id'));
-    console.log(id);
     if(String(todo.get('id')) === String(id)) {
       return [todo, i];
     }
