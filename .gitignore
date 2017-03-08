@@ -7,3 +7,5 @@ ui/dist/bundle.js
 ui/dist/bundle.js.map
 
 npm-debug.log
+
+.tern-port
